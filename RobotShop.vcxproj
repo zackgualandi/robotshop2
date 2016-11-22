@@ -98,22 +98,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Customer.cpp" />
     <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="MenuTest.cpp" />
     <ClCompile Include="RobotModel.cpp" />
     <ClCompile Include="robotpart.cpp" />
     <ClCompile Include="Head.cpp" />
     <ClCompile Include="Locomotor.cpp" />
     <ClCompile Include="Battery.cpp" />
     <ClCompile Include="Arm.cpp" />
+    <ClCompile Include="SalesAssociate.cpp" />
     <ClCompile Include="Torso.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Customer.h" />
     <ClInclude Include="Head.h" />
     <ClInclude Include="Battery.h" />
     <ClInclude Include="Arm.h" />
-    <ClInclude Include="Menu.h" />
     <ClInclude Include="RobotModel.h" />
+    <ClInclude Include="SalesAssociate.h" />
     <ClInclude Include="Torso.h" />
     <ClInclude Include="Locomotor.h" />
     <ClInclude Include="robotpart.h" />
