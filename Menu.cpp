@@ -281,10 +281,10 @@ public:
 		rp_id_number->align(FL_ALIGN_LEFT);
 
 		rp_create = new Fl_Return_Button(145, 320, 120, 25, "Create");
-		rp_create->callback((Fl_Callback *)create_robot_modelCB, 0);
+		rp_create->callback((Fl_Callback *)create_sales_associateCB, 0);
 
 		rp_cancel = new Fl_Button(270, 320, 60, 25, "Cancel");
-		rp_cancel->callback((Fl_Callback *)cancel_robot_modelCB, 0);
+		rp_cancel->callback((Fl_Callback *)cancel_sales_associateCB, 0);
 
 		dialog->end();
 		dialog->set_non_modal();
@@ -486,7 +486,7 @@ void menu_sales_associateCB(Fl_Widget* w, void* p)
 
 void create_sales_associateCB(Fl_Widget* w, void* p)
 {
-	cout << "### Creating Customer" << endl;
+	cout << "### Creating Sales Associate" << endl;
 	cout << "Name    : " << sales_associate_dlg->name() << endl;
 	cout << "ID #    : " << sales_associate_dlg->id_number() << endl;
 	test_SA.build_seller(sales_associate_dlg->name(), stoi(sales_associate_dlg->id_number()));
